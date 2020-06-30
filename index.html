@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harare Rentals</title>
+    <link rel="stylesheet" href="GothamLight/font.css">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-5.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg ">
+    <a class="navbar-brand main-img" href="#"><img src="images/Hrare rentals-logo.png" alt="Harare-logo"></a>
+    <button class="navbar-toggler ml-auto border-none" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Rentals <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Property for sale</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  position-relative dollar" ><img  src="images/icons8-currency-exchange-24.png" alt="rentals-logo"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#" ><span class="fa fa-plus"></span> list Property</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link btn-login" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><span><img src="images/user.png" alt=""></span>  login</a>
+        </li>
+      </ul>
+      <div class="currency-container position-absolute">
+            <ul class="list-unstyled currency-ul">
+                <li style="font-weight: bold">
+                    <a class="bg-default" href="javascript:void(0)" >USD - Foreign Transactions</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" >ZWL - Local Transactions</a>
+                </li>
+            </ul>
+      </div>
+    </div>
+
+</nav>
+ <!-- LOGIN MODAL -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel" >Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="post" class="form-group">
+           <input class="form-control" type="phone number" placeholder="Phone Number" required>
+           <input class="form-control" type="pasword" placeholder="Password" required>
+           <button class="form-control" role="button">SIGN IN</button>
+          </form>
+          <p>Forgot Password click  <a href="">HERE</a> To Reset </p>
+        </div>
+       
+         
+        </div>
+      </div>
+    </div>
+<!-- BILLBOARD -->
+<section class="hero">
+    <div class="overlay"> </div> 
+   <div class="search">
+     <h1>Find Places to rent in Harare</h1>
+     <form action="post">
+     <input  type="text" placeholder="Search For a Property to sale in Harare" role="combobox" autocomplete="none"><button>search</button>
+   </form>
+   <span class="dropdown-wrapper" aria-hidden="true"></span>
+   <!-- Example split danger button -->
+   <ul class="nav"> 
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Bills
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#" >5</a>
+           <a class="dropdown-item" href="#" >10</a>
+           <a class="dropdown-item" href="#" >28</a>
+           <a class="dropdown-item" href="#" >28</a>
+           <a class="dropdown-item" href="#" >28</a>
+           <a class="dropdown-item" href="#" >28</a>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+           Property type
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">Action</a>
+           <a class="dropdown-item" href="#">Another action</a>
+           <a class="dropdown-item" href="#">Something else here</a>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Rooms
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">Action</a>
+           <a class="dropdown-item" href="#">Another action</a>
+           <a class="dropdown-item" href="#">Something else here</a>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+           Bathrooms
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">Action</a>
+           <a class="dropdown-item" href="#">Another action</a>
+           <a class="dropdown-item" href="#">Something else here</a>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Bills
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">Action</a>
+           <a class="dropdown-item" href="#">Another action</a>
+           <a class="dropdown-item" href="#">Something else here</a>
+         </div>
+       </div>
+     </li>
+   </ul>
+ 
+   </div>
+ </section>
+<!-- POPULAR AREAS -->
+<section class="popular-areas " >
+    <div class="container ">
+        <h2>Popolar Areas</h2>
+        <p>We guarantee you the best of service</p>
+           <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false"  >
+              <div class="carousel-inner">
+                 <div class="carousel-item active">
+                     <div class="row ">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
+                           <div class="card">
+                              <img src="images/white-grey-and-red-wooden-house-164522.jpg" alt="house" id="rental-property" class="rental-property">
+                              <div class="card-title">
+                                 <h3>Greendale</h3>
+                                 <div class="card-title-inner">
+                                    <div class="title-inner">
+                                       <h4>Apartments</h4>
+                                       <p>2 Rooms</p>
+                                       <p>2 Beds</p>
+                                       <p>2 Bathrooms</p>
+                                       <h4>$ 430.00</h4>
+                                   </div>
+                                   <div class="title-inner border-r">
+                                       <h4>Villas</h4>
+                                       <p>2 Rooms</p>
+                                       <p>2 Beds</p>
+                                       <p>2 Bathrooms</p>
+                                       <h4>$ 830.00</h4>
+                                    </div>
+                                    <div class="title-inner">
+                                       <h4>Apartments</h4>
+                                       <p>2 Rooms</p>
+                                       <p>2 Beds</p>
+                                       <p>2 Bathrooms</p>
+                                       <h4>$ 530.00</h4>
+                                   </div>
+                                 </div>
+                             </div>
+                         </div>
+                      </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-none d-sm-block">
+                          <img src="images/abalina_beach_cottage_front-left-photo_01-500x333.jpg" alt="house"  onclick="myFunction(this)";>
+                          <div class="rentals-inner">
+                             <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="house"  onclick="myFunction(this)";>
+                             <img src="images/white-grey-and-red-wooden-house-164522.jpg" alt="house"  onclick="myFunction(this)";>
+                          </div>
+                          <a class="left carousel-control" href="#myCarousel" data-slide="prev">NEXT</a>
+                      </div>
+                     </div>
+                 </div>
+                 <div class="carousel-item">
+                    <div class="row ">
+                       <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
+                          <div class="card">
+                             <img src="images/architecture-building-driveway-entrance-259685.jpg" alt="house" id="rental-property" class="rental-property">
+                             <div class="card-title">
+                                <h3>Borrowdale</h3>
+                                <div class="card-title-inner">
+                                   <div class="title-inner">
+                                      <h4>Apartments</h4>
+                                      <p>2 Rooms</p>
+                                      <p>2 Beds</p>
+                                      <p>2 Bathrooms</p>
+                                      <h4>$ 430.00</h4>
+                                  </div>
+                                  <div class="title-inner border-r">
+                                      <h4>Villas</h4>
+                                      <p>2 Rooms</p>
+                                      <p>2 Beds</p>
+                                      <p>2 Bathrooms</p>
+                                      <h4>$ 830.00</h4>
+                                   </div>
+                                   <div class="title-inner">
+                                      <h4>Apartments</h4>
+                                      <p>2 Rooms</p>
+                                      <p>2 Beds</p>
+                                      <p>2 Bathrooms</p>
+                                      <h4>$ 530.00</h4>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                       <div class="col-12 col-sm-12 col-md-6 col-lg-6  d-none d-sm-block">
+                         <img src="images/webaliser-_TPTXZd9mOo-unsplash.jpg" alt="house"  onclick="myFunction(this)";>
+                         <div class="rentals-inner">
+                            <img src="images/jason-briscoe-AQl-J19ocWE-unsplash.jpg" alt="house"  onclick="myFunction(this)";>
+                            <img src="images/white-grey-and-red-wooden-house-164522.jpg" alt="house"  onclick="myFunction(this)";>
+                         </div>
+                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">NEXT</a>
+                     </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            </a>
+          </div>
+      </div>
+   </div>
+</section> 
+<!-- TRANDING PROPERTY -->
+<section class="tranding-property">
+    <div class="container">
+        <h2>Tranding Properties</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-8 col-12">
+                <div class="card">
+                    <img src="images/architecture-building-driveway-entrance-259685.jpg" alt="house">
+                    <div class="card-title">
+                        <h3>Borrowdale, Harare</h3>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <div class="tranding-property-inner">
+                            <div class="property-inner">
+                                <h4>RENTAL PROPERTY</h4>
+                                <p>Rent a room in Borrowdale for <br> a cheap price.</p>
+                                <p><i class="fas fa-bed">  4 </i><i class="fas fa-bath">  2 </i></p>
+                            </div>
+                            <div class="property-inner">
+                                <p>Standing Bid : $140.000.000</p>
+                                <p>Added Features : Swimming Pool </p>
+                                <p class="features">Tennis Court </p>
+                                <p class="features">Borehole </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="tranding-inner">
+                <div class="card">
+                    <img src="images/white-grey-and-red-wooden-house-164522.jpg" alt="house">
+                    <div class="card-title">
+                        <h3>Avonlea, Harare</h3>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <a href="#">VIEW PROPERTY</a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="images/webaliser-_TPTXZd9mOo-unsplash.jpg" alt="house">
+                    <div class="card-title">
+                        <h3>Greendale, Harare</h3>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <a href="#">VIEW PROPERTY</a>
+                    </div>
+                  </div>
+               </div> 
+            </div>
+        </div>
+    </div>
+</section>
+<!-- OUR COMMUNITY -->
+<section class="community">
+    <div class="container">
+        <h2>Join Our Community</h2>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="join-group">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#">Follow us on Facebook <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="join-group">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#">Follow us on Twitter <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="join-group">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#">Follow us on Instagram <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!-- AREAS -->
+<section class="areas">
+    <div class="container">
+        <h2>Areas We Encompass </h2>
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                <h3>Harare North</h3>
+                <p>Avondale</p>
+                <p>Borrowdale</p>
+                <p>Mount Pleasant</p>
+                <p>Chisipite</p>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                <h3>Harare East</h3>
+                <p>Marlborough</p>
+                <p>Cold Comfort</p>
+                <p>Wesrgate</p>
+                <p>Malbelreign</p>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                <h3>Harare West</h3>
+                <p>Waterfalls</p>
+                <p>Hatfield</p>
+                <p>Cranbome</p>
+                <p>Houghton Park</p>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                <h3>Harare South</h3>
+                <p>Greendale</p>
+                <p>Zimre Park</p>
+                <p>Kamfinsa</p>
+                <p>Eastlea</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--SUBMIT  -->
+<section class="submit">
+    <p>Receive our property highlights</p>
+    <img src="images/subscribe-arrow.svg" alt="">
+     <form action="post">
+       <input type="email" placeholder="Email Address" required>
+       <button type="submit">subscribe</button>
+     </form>
+  </section>
+<!-- SERVICES -->
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h5>Property</h5>
+          <ul>
+            <li><a href="">Property for sale</a></li>
+            <li><a href="">Property for rent</a></li>
+            <li><a href="">Developments</a></li>
+            <li><a href="">Commercial Rentals</a></li>
+            <li><a href="">Find an Estate Agent</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Advertise</h5>
+          <ul>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Property book the margazine</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="">Property Advice</a></li>
+            <li><a href="">Mortgage Calculator</a></li>
+            <li><a href="">E.A.C</a></li>
+           
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Facebook Groups</h5>
+          <ul>
+            <li><a href="">harare rentals</a></li>
+            <li><a href=""> harare Property sales</a></li>
+            <li><a href="">harare rooms for rent</a></li>
+            <li><a href="">All Groups(+30)</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+<!--FOOTER  -->
+<footer class="main-footer">
+    <div class="container">
+    <div class="footer-inner nav">
+      <ul class="nav">
+        <li>
+          <a href=""> about us</a>
+        </li>
+        <li>
+          <a href=""> contact us</a>
+        </li>
+        <li>
+          <a href=""> terms & conditions</a>
+        </li>
+        <li>
+          <a href=""> private policy</a>
+        </li>
+        <li>
+          <a href="">disclaimer</a>
+        </li>
+      </ul>
+  
+      <img src="images/logo.jpeg" alt="">
+    </div>
+    <hr class="hr">
+    <div class="last">
+      <p>This site is protected by copyright and trademark laws under Zimbawe and International <Law class="a">harare rentals.co &copy 2020</Law> </p>
+      <div class="icons">
+        <a href="" class=""> <img src="images/facebook.png" alt=""></a>
+        <a href="" class=""> <img src="images/twitter.png" alt=""></a>
+        <a href="" class=""> <img src="images/linkedin.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  
+  </footer>
+
+  <script src="jquery-2.2.4.min.js"></script>
+  <script src="popper.js"></script>
+  <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
