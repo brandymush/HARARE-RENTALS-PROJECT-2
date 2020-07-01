@@ -328,7 +328,7 @@ nav.navbar #navbar > div li:hover {
   padding: 0 30px;
   position: relative;
   z-index: 999;
-  top: 11%;
+  top: 9%;
 }
 
 .hero .search h1 {
