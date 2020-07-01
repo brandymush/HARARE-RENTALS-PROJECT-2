@@ -27,11 +27,11 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Property for sale</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item  d-none  d-sm-block">
           <a class="nav-link  position-relative dollar" ><img  src="images/icons8-currency-exchange-24.png" alt="rentals-logo"></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#" ><span class="fa fa-plus"></span> list Property</a>
+        <li class="nav-item " id="nav-item-4">
+          <a class="nav-link " href="#" ><span class="fa fa-plus d-none d-sm-block "></span> list Property</a>
         </li>
         <li class="nav-item">
            <a class="nav-link btn-login" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><span><img src="images/user.png" alt=""></span>  login</a>
@@ -74,12 +74,12 @@
       </div>
     </div>
 <!-- BILLBOARD -->
-<section class="hero">
+<section class="hero" id="billboard">
     <div class="overlay"> </div> 
    <div class="search">
      <h1>Find Places to rent in Harare</h1>
      <form action="post">
-     <input  type="text" placeholder="Search For a Property to sale in Harare" role="combobox" autocomplete="none"><button>search</button>
+     <input  type="text" placeholder="Search For a Rental in Harare" role="combobox" autocomplete="none"><button>search</button>
    </form>
    <span class="dropdown-wrapper" aria-hidden="true"></span>
    <!-- Example split danger button -->
@@ -159,7 +159,7 @@
 <!-- POPULAR AREAS -->
 <section class="popular-areas " >
     <div class="container ">
-        <h2>Popolar Areas</h2>
+        <h2>Popular Areas</h2>
         <p>We guarantee you the best of service</p>
            <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false"  >
               <div class="carousel-inner">
@@ -261,11 +261,11 @@
 <!-- TRANDING PROPERTY -->
 <section class="tranding-property">
     <div class="container">
-        <h2>Tranding Properties</h2>
+        <h2>Trending Properties</h2>
         <div class="row">
             <div class="col-sm-12 col-md-8 col-lg-8 col-12">
                 <div class="card">
-                    <img src="images/architecture-building-driveway-entrance-259685.jpg" alt="house">
+                    <img src="images/architecture-building-driveway-entrance-259685.jpg" alt="house" id="trending-img">
                     <div class="card-title">
                         <h3>Borrowdale, Harare</h3>
                         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
@@ -278,8 +278,8 @@
                             <div class="property-inner">
                                 <p>Standing Bid : $140.000.000</p>
                                 <p>Added Features : Swimming Pool </p>
-                                <p class="features">Tennis Court </p>
-                                <p class="features">Borehole </p>
+                                <p class="features d-none d-sm-block">Tennis Court </p>
+                                <p class="features d-none d-sm-block">Borehole </p>
                                 
                             </div>
                         </div>
@@ -289,7 +289,7 @@
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                 <div class="tranding-inner">
                 <div class="card">
-                    <img src="images/white-grey-and-red-wooden-house-164522.jpg" alt="house">
+                    <img src="images/white-grey-and-red-wooden-house-164522.jpg" alt="house" onclick="myFunction(this);" >
                     <div class="card-title">
                         <h3>Avonlea, Harare</h3>
                         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
@@ -297,7 +297,7 @@
                     </div>
                   </div>
                   <div class="card">
-                    <img src="images/webaliser-_TPTXZd9mOo-unsplash.jpg" alt="house">
+                    <img src="images/webaliser-_TPTXZd9mOo-unsplash.jpg" alt="house" onclick="myFunction(this);" >
                     <div class="card-title">
                         <h3>Greendale, Harare</h3>
                         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
@@ -469,6 +469,10 @@
   </div>
   
   </footer>
+<!-- fixed icon -->
+<a href="#billboard" class="fixed-icon"> <i class="fas fa-angle-up"></i> </a>
+<!-- end fixed icon -->
+
 
   <script src="jquery-2.2.4.min.js"></script>
   <script src="popper.js"></script>
