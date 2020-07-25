@@ -1,28 +1,22 @@
 
 
-function myFunction(img) {
-    // // Get the expanded image
-    //  var expandImg = document.getElementById("expandedImg");
-    // // Use the same src in the expanded image as the image being clicked on from the grid
-    //  expandImg.src = imgs.src;
-    // Show the container element (hidden with CSS)
-    //  expandImg.parentElement.style.display = "block";
-        // Get the expanded image
-        var expandImg = document.getElementById("trending-img");
-        // Use the same src in the expanded image as the image being clicked on from the grid
+function myFunction(img,id) {
+       // card1
+        var expandImg = $('#'+id);
          expandImg.src = img.src;
-        // Show the container element (hidden with CSS)
-        // expandImg.parentElement.style.display = "block";
-  }
- 
- 
+}
+$(document).ready(function() {
+  $("#formButton").click(function() {
+    $("#form1").toggle();
+  });
+});
 
 
-  $('.currency-container').slideToggle();
+
   $(".dollar").click(function(){
       $(".currency-container").slideToggle();
     });
   
-  
-
-  
+  $(".btn").click(function() {
+  $(".myText").toggle();  
+});

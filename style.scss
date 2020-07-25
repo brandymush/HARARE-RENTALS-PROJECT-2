@@ -38,16 +38,19 @@ q:before, q:after {
 	content: none;
 }
 html,body{scroll-behavior: smooth;}
-section{margin-bottom: 100px;}
+section{margin-bottom: 80px;}
 h2{font-size:38px;}
 h3{font-size: 28px;}
 h4{font-size: 18px;}
-p{font-size: 16px;line-height: 1.3;}
-.fixed-icon{font-size: 30px;padding: 8px 16px;color: white;background-color: red;border-radius: 35px;position: fixed;top: 92%;left: 94%;z-index: 9999999;;
-	&:hover{color: black;}
+p{font-size: 16px;line-height: 1.3;font-weight: 900;}
+
+.fixed-icon{font-size: 30px;padding: 8px 16px;color: white;background-color: rgb(255, 0, 0);border-radius: 35px;position: fixed;top: 92%;left: 94%;z-index: 9999999;;
+	&:hover{color:#4D4D4D}
 }
+.main-image >img{width: 100px;height: 50px;object-fit: contain;}
+.active-1{background-color: blue;color: white;}
 // NAVBAR
-nav.navbar{padding: 15px 120px;height:12vh;background-color:white;align-items:center;display:flex;    position: fixed;z-index: 9999;width: 100%;
+nav.navbar{padding: 15px 120px;height:3.75rem;background-color:white;align-items:center;display:flex;    position: fixed;z-index: 9999;width: 100%;
 	.navbar-toggler{height: 45px;width:70px;
 		span{display: block;height: 8px;width:100% ;background-color: #000000;border-radius:5px;
 			&:nth-of-type(2){margin:5px 0;}
@@ -55,26 +58,26 @@ nav.navbar{padding: 15px 120px;height:12vh;background-color:white;align-items:ce
 		&:focus{border: none;outline: none;}
 	}
 	.main-img{
-		img{height:75px;}
+		img{height:60px;}
 	}
 	#navbar{
 		ul{align-items: center;
 			li{margin: 0 10px;
-				&:nth-of-type(3){
+				&:nth-of-type(4){
 					img{position: relative;}
 				}
-				&:nth-of-type(4){background-color: red;border: none;color:white;border-radius:5px;
+				&:nth-of-type(3){background-color: red;border: none;color:white;border-radius:2px;
 					a{color: white;}
 					&:hover{background: #4D4D4D;color:red;}
 				}
 				&:last-of-type{
 					span{
-						img{height: 20px;padding-right: 10px;}
+						img{height: 40px;border: 1px solid red;border-radius: 30px;padding: 10px;margin-right: 5px;}
 					}
 				}
-				a{font-size: 20px;color: #000000;padding-right:20px;display:flex;align-items:center;
+				a{font-size: 15px;color: #000000;padding-right:8px;display:flex;align-items:center;
 				   img{height: 40px;}
-				   .fa{color: white;margin-right: 5px;}
+				   .fa{color: white;margin-right: 10;}
 				   .login{border: 1px solid #4D4D4D;padding: 5px;border-radius: 20px;margin-right: 12px;}
 				   &:hover{color: red;}
 				   
@@ -87,6 +90,7 @@ nav.navbar{padding: 15px 120px;height:12vh;background-color:white;align-items:ce
 	   }
 	}
 }
+
 // MODAL
 .modal{top: 110px;z-index: 9999999;
    >div{z-index: 999999999;
@@ -108,24 +112,37 @@ nav.navbar{padding: 15px 120px;height:12vh;background-color:white;align-items:ce
   }
 }
 // BILLBOARD
-.hero{background: url(./images/Images/iStock-140781367.jpg);height: 100vh;background-position: center 10%;background-repeat: no-repeat;background-size: cover;display:flex;align-items:center;justify-content:center;position:relative;
+.hero{background: url(./images/Images/iStock-140781367.jpg);height: 50vh;background-position: center 10%;background-repeat: no-repeat;background-size: cover;display:flex;align-items:center;justify-content:center;position:relative;
 	.overlay{background-color: rgb(0, 0, 0);position: absolute;left:0;right: 0;bottom: 0;opacity: .3;height: 100%;z-index: 1;}
-	.search{background-color: red;height: 200px;width:60%;display: flex;flex-direction: column;justify-content:center;padding:0 30px;position: relative;z-index: 999;top: 9%;
-		h1{font-size: 30px;align-self: flex-start;padding-bottom: 30px;color: white;}
+	.search{background-color: red;height: 150px;width:50%;display: flex;flex-direction: column;justify-content:center;padding:0 30px;position: relative;z-index: 999;top: 9%;
+		h1{font-size: 25px;align-self: flex-start;padding-bottom: 15px;color: white;}
 		form{display: flex;
-			input{width:90%;height: 50px;padding: 20px;border: none;background: url(./images/iconmonstr-search-thin-240.png);background-size:30px;background-repeat: no-repeat;background-color: white;padding-left:60px;background-position: 20px center;
-				>::placeholder{padding-left: 100px;text-transform: uppercase;text-align: center;}
+			input{width:90%;height: 35px;padding: 20px;border: none;background: url(./images/iconmonstr-search-thin-240.png);background-size:20px;background-repeat: no-repeat;background-color: white;padding-left:60px;background-position: 20px center;font-size: 15px;;
+				>::placeholder{padding-left: 80px;text-transform: uppercase;text-align: center;}
 			}
-			button{height: 50px;border: none;padding: 10px;font-size: 16px;text-transform: uppercase;color:white;background-color: #4D4D4D;;}
+			button{height:40px;border: none;padding: 10px;font-size: 16px;text-transform: uppercase;color:white;background-color: #4D4D4D;;}
 		}
-		ul{padding:12px 0 ;
-			li{padding-right: 20px;
-				a{font-size: 20px;color: white;text-decoration: none;}
+		ul{padding:6px 0 ;
+			li{padding-right: 30px;
+				a{font-size: 15px;color: white;text-decoration: none;}
 				.dropdown-item{color: #000000;}
 			}
 		}
 	}
 }
+.listings-hero{height:20vh;background: none;width: 100%;
+	.overlay{background: none;}
+	.search{height: 140px;width: 100%;top:30%;background-color: whitesmoke;
+		form{width: 50%;
+			>input{height: 35px;width: 100%;}
+			button{height: 40px;}
+		}
+		>ul >li{
+			>div >a{font-size: 12px;color: black;}
+		}
+	}
+}
+nav.single-page{background-color:whitesmoke;}
 // POPULAR AREAS
 .popular-areas{text-align: center;
 	>div{
@@ -281,28 +298,329 @@ nav.navbar{padding: 15px 120px;height:12vh;background-color:white;align-items:ce
 		p{font-size: 15px;text-transform: capitalize;}
 		.icons{display: flex;align-items:center;
 			a{border:2px solid #4D4D4D;padding:10px;text-align:center;margin:10px;transition:all .5s ease-in-out;
-				&:hover{background-color: red;}
+				&:hover{background-color:#4D4D4D;color: white;}
 				img{height: 20px;margin: auto;}
 			}
 		}
 	}
 }
+/////////////Listings Page/////////////////
+.rentals{background-color: whitesmoke;padding-bottom: 40px;;
+	>div{padding: 40px 0;;
+		>div{
+			>div:last-child{background: whitesmoke;padding-top: 30px;
+				.rentals-results{display: flex;justify-content: space-between;background-color: rgb(255, 0, 0);padding: 15px;color: white;margin: 40px 0 20px;
+					>div{
+						>select{background: red;border: none;color: white;}
+					}
+				}
+				>h3{margin-bottom: 10px;display: flex;align-items: center;;
+					&::after{content:'';background:#4D4D4D;width: 20%;height: 1.5px;margin: 0 20px;}
+
+				}
+				.card{border: none;position: relative;margin-top: 40px;
+					>a{position:absolute;background-color:#4D4D4D;color:#DAA03DFF;padding: 6px 12px;top: 5px;left: 5px;border-radius: 3px;z-index: 99;}
+					>div{display: flex;align-items: center;
+						>img{width: 360px;height: 230px;}
+						hr{width: 95%;margin:12px auto;}
+						p{font-size: 13px;}
+				       >div{
+							>div{display: flex;justify-content: space-between;padding: 0 15px;;
+								>p{margin: 0 10px 18px 0;line-height: 1.4;}
+								>img{width: 80px;height: 50px;object-fit: cover;border-radius: 3px;}
+							}
+							>div.prio{background-color: #DAA03DFF;padding:0 15px;;
+								>div{
+									>a{font-size: 12px;color: gold;letter-spacing: 1.5px;}
+								}
+								>div:nth-child(2){display: flex;align-items: center;
+									>h5{font-size: 15px;margin: 0 10px;}
+									>p{width: 80px;background:gold;text-align: center;padding: 5px;;}
+									.priority{background-color:#4D4D4D;color: white;z-index: 999999;;}
+								}
+							}
+							>div:last-child{align-items: center;justify-content: start;
+								>span{margin-right: 20px;font-size: 15px;}
+								>a{border: 1px solid rgba(255, 0, 0, 0.733);border-radius: 3px;padding: 6px 12px;color: black;margin-left: auto;text-align: center;font-size: 14px;}
+								
+							}
+				        }
+			        }
+				}
+
+			}
+			>div:first-child >div{text-align: center;
+				>div:first-child{height: 300px;;box-shadow: 2px 2px 30px whitesmoke;border: none;padding: 15px 0; ;
+				>h3{line-height: 1.3;}
+				>p{margin: 20px 0;color: #4D4D4D;}
+				>div{margin: 30px 10px 0;
+					>input{height: 40px;width: 100%;border: 1px solid rgba(255, 0, 0, 0.507);text-align: center;}
+					>a{height: 40px;width: 100%;background-color:red;color: white;display: flex;align-items: center;justify-content: center;}
+				}
+			  }
+			  >div:last-child{margin-top: 60px;
+				  .card{box-shadow: 2px 2px 30px whitesmoke;border: none;padding: 15px 0;margin-top: 20px;
+					h4{margin: 15px;line-height: 1.4;}
+					  >div{display: flex;flex-direction: column;align-items: center;;
+						  >img{width: 80%;border-radius: 5px;}
+						  >a{border-radius: 2px;padding: 6px 12px;color:white;margin: 10px 0;width: 150px;background-color: red;}
+					  }
+				  }
+			  }
+			}
+		}
+	}
+}
+.priority-listings{border: none;position: relative;margin-top: 40px;
+	>a{position:absolute;background-color:#4D4D4D;color:#DAA03DFF;padding: 6px 12px;top: 5px;left: 5px;border-radius: 3px;z-index: 99;}
+	>div{display: flex;align-items: center;;
+		hr{width: 95%;margin:12px auto;}
+		p{font-size: 13px;}
+	   >div{
+			>div{display: flex;justify-content: space-between;padding: 0 15px;;
+				>p{margin: 0 10px 18px 0;line-height: 1.4;}
+				>img{width: 80px;height: 50px;object-fit: cover;border-radius: 3px;}
+			}
+			>div.prio{
+				>div{
+					>a{font-size: 12px;color: gold;letter-spacing: 1.5px;}
+				}
+				>div:nth-child(2){display: flex;align-items: center;
+					>h5{font-size: 15px;margin: 0 10px;}
+					>p{width: 80px;background:gold;text-align: center;padding: 5px;;}
+					.priority{background-color:#4D4D4D;color: white;z-index: 999999;;}
+				}
+			}
+			>div:last-child{align-items: center;justify-content: start;
+				>span{margin-right: 20px;font-size: 15px;}
+				>a{border: 1px solid rgba(255, 0, 0, 0.733);border-radius: 3px;padding: 6px 12px;color: black;margin-left: auto;text-align: center;font-size: 14px;}
+			}
+		}
+	}
+}
+.large-img{width:100%;height: 250px;object-fit: cover;}
+.featured{background-color: white;border-right: 1px solid gold;margin-top: 50px;position: relative;
+	.ribbon{position:absolute;background-color:#4D4D4D;color:gold;padding: 6px 12px;top: 78px;left:5px;border-radius: 1px;z-index: 99;}
+	>div:first-child{display: flex;background-color: gold;justify-content:space-between;align-items: center;padding: 20px 10px;width: 100%;
+		>h3{font-size: 24px;}
+		>h4{font-size: 20px;}
+		.feature{color: gold;background-color: #4D4D4D;padding: 10px;font-size: 12px;z-index: 9999;}
+	}
+	.second{display: flex;
+			>div:last-child{display: flex;flex-direction: column;
+			.small-img{margin:0 0 8px 8px ;width:235px;height: 120px;object-fit:cover}}
+			>div >a >span{background-color: gold;}
+		    
+	}
+	.last{display: flex;
+		>div:first-child{padding: 15px;
+			>h3{font-size: 22px;}
+			>p{font-size: 13px;margin: 12px 0;}
+			>div{align-items: center;justify-content: start;
+				>span{margin-right: 20px;font-size: 14px;}
+				>a{border: 1px solid gold;border-radius: 3px;padding: 6px 12px;color: black;margin-left: auto;text-align: center;font-size: 13px;}
+			}
+		}
+		>div:last-child{text-align: center;position: relative;height: 130px;;
+			   >img{width: 235px;height:100%;object-fit:cover;}
+			   >div{position: absolute;background: rgba(0, 0, 0, 0.514);color: white;top: 0;height: 100%;width: 100%;;display: flex;flex-direction: column;justify-content: center;align-items: center;
+				h5{font-size: 22px;margin-bottom: 10px;}
+				>span{margin: 3px 0;font-size: 11px;}
+			}
+			
+			   
+		}
+	}
+}
+
+.FEATURED{border-right:1px solid #DAA03DFF ;
+	>div:first-child{background-color: #DAA03DFF;}
+     .priority-list{display: flex;border:none;
+	     .second{
+	          .prio-img{width:360px;height: 100%;}
+				}
+	      .last{flex-direction: column;
+	  .prio-icons{text-align: left;padding: 0 15px;height:20px;
+			>span{margin-right: 70px;}
+			>a{color: black;border: 1px solid #DAA03DFF;border-radius: 2px;padding: 5px 12px;font-size: 12px;margin-right: auto;}
+		}
+		>div:last-child{display: flex;padding:0 15px;justify-content: space-between;align-items: center;height: 80px;
+			>h4{font-size: 15px;line-height: 1.3;text-align: left;color: #DAA03DFF;}
+			>img{width: 120px;height: 60%;}
+		}
+
+	}
+}
+}	
 
 
 
 
 
+	
+.container-breadcrumb{
+	padding: 100px 0 0 0;
+	
+
+}
+
+.breadcrumb {
+	display: flex;
+	border-radius: 6px;
+	overflow: hidden;
+	margin: auto;
+	text-align: center;
+	top: 50%;
+	width: 100%;
+	height:50px;
+	transform: translateY(-50%);
+	z-index: 1;
+	font-size: 11px;
+	background-color: white;
+}
+
+	.breadcrumb a {
+		position: relative;
+		display: flex;
+		text-decoration: none;
+		margin: auto;
+		height: 100%;
+		padding:0 18px;
+		color: red;
+		font-weight: bold;
+	}
 
 
+		.breadcrumb a:after {
+			content: "";
+			position: absolute;
+			display: inline-block;
+			width:40px;
+			height: 40px;
+			top: -7px;
+			right: -20px;
+			border-top-right-radius: 5px;
+			transform: scale(0.707) rotate(45deg);
+			box-shadow: 1px -1px rgba(0,0,0,0.25);
+			z-index: 1;
+			margin-right: 4px;
+		}
+		.breadcrumb a:first-child:before {
+			content: "";
+			position: absolute;
+			display: inline-block;
+			width:40px;
+			height: 40px;
+			top: -7px;
+			right: 100px;
+			// background-color: #ddd;
+			border-top-right-radius: 5px;
+			transform: scale(0.707) rotate(-135deg);
+			box-shadow: 1px -1px rgba(0,0,0,0.25);
+			z-index: 1;
+			padding: 0 20px ;
+		}
+
+		.breadcrumb a:last-child:after {
+			content: none;
+			}
+
+	.breadcrumb__inner {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		z-index: 2;
+	}
+
+// .breadcrumb a.active, .breadcrumb a:hover{
+// 	color: white;
+// }
+
+// .breadcrumb a.active:after, .breadcrumb a:hover:after {
+// 	color: white;
+// }
+// .breadcrumb a.active:after, .breadcrumb a:first-child:hover:before {
+// 	color:white;
+// }
 
 
-
-
-
-
-
-
-
+.carousel-image{height: 500px;width: 100%;object-fit: cover;}
+.carousel-thumbnails .carousel-indicators img {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+	display: block;
+	object-fit: cover;
+}
+.carousel-indicators{background:rgba(0, 0, 0, 0.644);padding:10px ;}
+.carousel-caption{top:40%;
+       >h1{color:rgba(255, 0, 0, 0.671);font-size: 42px;}}
+.carousel-thumbnails .carousel-indicators li {
+   height: auto;
+    width: 100px;
+    border: none;
+	box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+	
+	&.active {
+		border-bottom: 4px solid #fff;
+	}
+}
+// single listings page
+.btn-primary{background-color: red;border: none;
+&:hover{background-color: whitesmoke;color: red;}}
+.card-icons >i{margin:15px 30px 0 0  ;}
+.single-card-image{width: 100%;height: 250px;}
+.single-listings-card{background-color: whitesmoke;}
+span{color: red;}
+.single-listings-page{display: flex;background-color:whitesmoke;align-items: center;;
+	>div{padding: 0 8px;
+		>h4{color:red;font-size: 22px;padding-bottom: 5px;}
+	}
+	>div:first-child{background-color: gold;margin-right:5px;padding: 12px 20px;}
+}
+.single-description{margin: 20px 0 80px;
+	h4{font-size: 19px;margin: 5px 0;}
+	>p{font-size: 13px;color: gold;}
+	>div{margin: 20px 0;
+		>p{font-size: 15px;line-height: 1.4;margin: 10px 0;}
+		>div{display: flex;margin: 20px 0;background-color:gold;
+		>img{width: 50%;object-fit: cover;margin-right: 30px;}
+		>div {padding: 20px 0;
+			>div{margin: 15px 0;
+			>p{font-size: 14px;}
+	        	}
+        	}
+        }
+	}
+}
+// agent details
+.agent-details{margin-top: 150px;border: none;box-shadow: 1px 1px 20px rgb(182, 182, 182);padding: 15px;;
+	>h3{margin-bottom: 15px;font-size: 26px;}
+	>img{width: 100%;height: 180px;}
+	>button{background-color: red;color: white;width: 100%;border: none;border-radius: 0;}
+	>h4{margin: 15px 0 ;}
+	>form{
+		>input{height: 40px;width: 100%;margin: 8px 0;padding:5px 10px;}
+		>textarea{width: 100%;height: 120px;padding:5px 10px;margin: 8px 0;}
+		>a{height: 35px;width: 100%;background-color: red;color: white;display: flex;justify-content: center;align-items: center;}
+	}
+	>p{font-size: 12px;text-align: center;margin: 5px;}
+}
+.myText{display: none;
+	>p{font-size: 18px;margin: 10px 0;}
+	>div{display: flex;justify-content: space-between;
+		>p{font-size: 18px;margin: 10px 0;}
+		>a{width: 49%;color: white;background-color: red;height: 35px;align-items: center;justify-content: center;display: flex;
+			&:hover{text-decoration: none;background-color: blue;}
+		>i{margin-right: 10px;}}
+	}
+}
+.comments{margin: 20px 0;
+	
+	>p{display: flex;padding: 15px 0;
+		>i{font-size: 28px;margin-right: 15px;}
+	}
+}
 
 
 
@@ -465,7 +783,9 @@ nav.navbar{padding:0 0px;height: 12vh;
 .main-footer{margin-bottom: 30px;
 	hr{margin: 0;}
 	.footer-inner{justify-content: space-between;align-items: center;padding:30px 0;
-		ul{flex-direction: column;line-height: 1.5;}
+		ul{flex-direction: column;line-height: 1.5;
+			>li a &:hover{color: #000;}
+		}
 		img{height: 50px;margin: 25px 0;}
 
 	}
@@ -473,10 +793,59 @@ nav.navbar{padding:0 0px;height: 12vh;
 		p{text-align: center;padding: 15px 0;}
 	  }
    }
+/////////////Listings Page/////////////////
+.rentals{
+	>div{
+		>div{
+			>div:first-child{
+				.rentals-results{flex-direction: column;
+					>div{
+						p{margin-top: 30px;}
+						>select{background: red;border: none;color: white;}
+					}
+				}
+				>h3{margin-bottom: 10px;display: flex;align-items: center;;
+					&::after{content:'';background:#4D4D4D;width: 20%;height: 1.5px;margin: 0 20px;}
 
+				}
+				.card{margin-top:50px;;
+					>a{top: 8px;}
+					>div{flex-direction: column;
+					    >img{width:100%;}
+				       >div{margin-top: 15px;
+							>div{
+								>h4{font-size: 20px;}
+								>img{width: 60px;height: 40px;}
+							}
+								
+							>div:nth-of-type(1){
+								>div{
+									>h4{font-size: 20px;}
+									>p{font-size: 10px;}
+									>a{font-size: 10px;}
+								}
+								>div:nth-child(2){
+									>h5{font-size: 12px;}
+									>p{width: 80px;}
+								}
+							}
+							>div:last-child{
+								>span{font-size: 12px;}
+								>a{font-size: 12px;}
+								
+							}
+
+				        }
+			        }
+				}
+
+			}
+			>div:last-child{margin-top: 60px;;}
+		}
+	}
 }
 
-
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 568px) and (max-width:992px) {
@@ -646,6 +1015,55 @@ nav.navbar{padding:0 0px;height: 24vh;
 		p{text-align: center;padding: 15px 0;}
 	  }
    }
+/////////////Listings Page/////////////////
+.rentals{
+	>div{
+		>div{
+			>div:first-child{
+				.rentals-results{display: flex;justify-content: space-between;background-color: rgb(255, 0, 0);padding: 15px;color: white;margin: 40px 0 20px;
+					>div{
+						>select{background: red;border: none;color: white;}
+					}
+				}
+				>h3{margin-bottom: 10px;display: flex;align-items: center;;
+					&::after{content:'';background:#4D4D4D;width: 20%;height: 1.5px;margin: 0 20px;}
+
+				}
+				.card{margin-top:50px;;
+					>a{top: 8px;}
+					>div{flex-direction: column;
+					    >img{width:100%;height: 350px;}
+				       >div{margin-top: 15px;
+							>div{
+								>h4{font-size: 20px;}
+								>img{width: 60px;height: 40px;}
+							}
+								
+							>div:nth-of-type(1){
+								>div{
+									>h4{font-size: 20px;}
+									>p{font-size: 10px;}
+									>a{font-size: 10px;}
+								}
+								>div:nth-child(2){
+									>h5{font-size: 12px;}
+									>p{width: 80px;}
+								}
+							}
+							>div:last-child{
+								>span{font-size: 12px;}
+								>a{font-size: 12px;}
+								
+							}
+
+				        }
+			        }
+				}
+
+			}
+		}
+	}
+}
 
 
 }
@@ -768,10 +1186,49 @@ nav.navbar{height:12vh;
 		ul{flex-direction: row;width: 70%;line-height: 1.5;}
 	}
    }
+/////////////Listings Page/////////////////
+.rentals{
+	>div{
+		>div{
+			>div:first-child{
+				.card{
+					>a{
+					>div{
+					   >img{width:100%;height: 300px;object-fit: cover;}
+				       >div{
+							>div{
+								>h4{font-size: 20px;}
+								>img{width: 60px;height: 40px;}
+							}
+				        }
+			        }
+				}
+			}
+		}
+			>div:last-child >div{display: flex;margin-top: 60px;
+				.card{width:400px;margin: 5px;;
+				>h3{line-height: 1.3;}
+				>p{margin: 20px 0;color: #4D4D4D;}
+				>div{margin: 30px 10px 0;
+					>input{height: 40px;width: 80%;border: 1px solid rgba(255, 0, 0, 0.507);text-align: center;}
+					>a{height: 40px;width: 80%;background-color:red;color: white;display: flex;align-items: center;justify-content: center;}
+				}
+			  }
+			  >div:last-child{width: 400px;margin: 5px;
+				>div{width: 100%;
+				  >img{width: 70%;}
+				  
+			    }
+			}
+	    }
+
+	}
 }
+}
+}
+
+
 // iphone x landscape
-
-
 @media (max-width: 812px) and (min-width:780px){
 	nav.navbar{height: 24vh;}
 	.hero {height: 100vh;
@@ -831,10 +1288,46 @@ nav.navbar {padding: 15px 40px;height: 12vh;;
 	}
 	.last >p{padding-right: 80px;line-height: 1.5;}
    }
+/////////////Listings Page/////////////////
+.rentals{
+	
+	>div{
+		>div{
+			>div:first-child{
+				.rentals-results{display: flex;justify-content: space-between;background-color: rgb(255, 0, 0);padding: 15px;color: white;margin: 40px 0 20px;
+					>div{
+						>select{background: red;border: none;color: white;}
+					}
+				}
+				.card{border: none;position: relative;margin-top:40px;;
+					>div{
+					   >img{width: 330px;height: 260px;object-fit: cover;}
+				       >div{
+							>div:last-child{
+								>a{padding: 6px 2px;font-size: 12px;}
+								
+							}
+
+				        }
+			        }
+				}
+
+			}
+			>div:last-child >div{flex-direction: column;
+				.card{width:220px;
+				>p{margin: 10px 0;}
+				>div:last-child{width:220px;
+				>div{width: 100%;}}
+			  }
+			}
+		}
+	}
+}
+
+
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
-
 
 
 

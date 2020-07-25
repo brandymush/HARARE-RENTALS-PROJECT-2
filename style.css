@@ -46,7 +46,7 @@ html, body {
 }
 
 section {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 h2 {
@@ -64,6 +64,7 @@ h4 {
 p {
   font-size: 16px;
   line-height: 1.3;
+  font-weight: 900;
 }
 
 .fixed-icon {
@@ -79,12 +80,24 @@ p {
 }
 
 .fixed-icon:hover {
-  color: black;
+  color: #4D4D4D;
+}
+
+.main-image > img {
+  width: 100px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.active-1 {
+  background-color: blue;
+  color: white;
 }
 
 nav.navbar {
   padding: 15px 120px;
-  height: 12vh;
+  height: 3.75rem;
   background-color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -120,7 +133,7 @@ nav.navbar .navbar-toggler:focus {
 }
 
 nav.navbar .main-img img {
-  height: 75px;
+  height: 60px;
 }
 
 nav.navbar #navbar ul {
@@ -133,35 +146,38 @@ nav.navbar #navbar ul li {
   margin: 0 10px;
 }
 
-nav.navbar #navbar ul li:nth-of-type(3) img {
+nav.navbar #navbar ul li:nth-of-type(4) img {
   position: relative;
 }
 
-nav.navbar #navbar ul li:nth-of-type(4) {
+nav.navbar #navbar ul li:nth-of-type(3) {
   background-color: red;
   border: none;
   color: white;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
-nav.navbar #navbar ul li:nth-of-type(4) a {
+nav.navbar #navbar ul li:nth-of-type(3) a {
   color: white;
 }
 
-nav.navbar #navbar ul li:nth-of-type(4):hover {
+nav.navbar #navbar ul li:nth-of-type(3):hover {
   background: #4D4D4D;
   color: red;
 }
 
 nav.navbar #navbar ul li:last-of-type span img {
-  height: 20px;
-  padding-right: 10px;
+  height: 40px;
+  border: 1px solid red;
+  border-radius: 30px;
+  padding: 10px;
+  margin-right: 5px;
 }
 
 nav.navbar #navbar ul li a {
-  font-size: 20px;
+  font-size: 15px;
   color: #000000;
-  padding-right: 20px;
+  padding-right: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,7 +192,7 @@ nav.navbar #navbar ul li a img {
 
 nav.navbar #navbar ul li a .fa {
   color: white;
-  margin-right: 5px;
+  margin-right: 10;
 }
 
 nav.navbar #navbar ul li a .login {
@@ -284,7 +300,7 @@ nav.navbar #navbar > div li:hover {
 
 .hero {
   background: url(./images/Images/iStock-140781367.jpg);
-  height: 100vh;
+  height: 50vh;
   background-position: center 10%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -313,8 +329,8 @@ nav.navbar #navbar > div li:hover {
 
 .hero .search {
   background-color: red;
-  height: 200px;
-  width: 60%;
+  height: 150px;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,10 +348,10 @@ nav.navbar #navbar > div li:hover {
 }
 
 .hero .search h1 {
-  font-size: 30px;
+  font-size: 25px;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   color: white;
 }
 
@@ -347,43 +363,44 @@ nav.navbar #navbar > div li:hover {
 
 .hero .search form input {
   width: 90%;
-  height: 50px;
+  height: 35px;
   padding: 20px;
   border: none;
   background: url(./images/iconmonstr-search-thin-240.png);
-  background-size: 30px;
+  background-size: 20px;
   background-repeat: no-repeat;
   background-color: white;
   padding-left: 60px;
   background-position: 20px center;
+  font-size: 15px;
 }
 
 .hero .search form input > ::-webkit-input-placeholder {
-  padding-left: 100px;
+  padding-left: 80px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .hero .search form input > :-ms-input-placeholder {
-  padding-left: 100px;
+  padding-left: 80px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .hero .search form input > ::-ms-input-placeholder {
-  padding-left: 100px;
+  padding-left: 80px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .hero .search form input > ::placeholder {
-  padding-left: 100px;
+  padding-left: 80px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .hero .search form button {
-  height: 50px;
+  height: 40px;
   border: none;
   padding: 10px;
   font-size: 16px;
@@ -393,21 +410,60 @@ nav.navbar #navbar > div li:hover {
 }
 
 .hero .search ul {
-  padding: 12px 0;
+  padding: 6px 0;
 }
 
 .hero .search ul li {
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .hero .search ul li a {
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   text-decoration: none;
 }
 
 .hero .search ul li .dropdown-item {
   color: #000000;
+}
+
+.listings-hero {
+  height: 20vh;
+  background: none;
+  width: 100%;
+}
+
+.listings-hero .overlay {
+  background: none;
+}
+
+.listings-hero .search {
+  height: 140px;
+  width: 100%;
+  top: 30%;
+  background-color: whitesmoke;
+}
+
+.listings-hero .search form {
+  width: 50%;
+}
+
+.listings-hero .search form > input {
+  height: 35px;
+  width: 100%;
+}
+
+.listings-hero .search form button {
+  height: 40px;
+}
+
+.listings-hero .search > ul > li > div > a {
+  font-size: 12px;
+  color: black;
+}
+
+nav.single-page {
+  background-color: whitesmoke;
 }
 
 .popular-areas {
@@ -922,12 +978,1001 @@ nav.navbar #navbar > div li:hover {
 }
 
 .main-footer .last .icons a:hover {
-  background-color: red;
+  background-color: #4D4D4D;
+  color: white;
 }
 
 .main-footer .last .icons a img {
   height: 20px;
   margin: auto;
+}
+
+.rentals {
+  background-color: whitesmoke;
+  padding-bottom: 40px;
+}
+
+.rentals > div {
+  padding: 40px 0;
+}
+
+.rentals > div > div > div:last-child {
+  background: whitesmoke;
+  padding-top: 30px;
+}
+
+.rentals > div > div > div:last-child .rentals-results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: red;
+  padding: 15px;
+  color: white;
+  margin: 40px 0 20px;
+}
+
+.rentals > div > div > div:last-child .rentals-results > div > select {
+  background: red;
+  border: none;
+  color: white;
+}
+
+.rentals > div > div > div:last-child > h3 {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rentals > div > div > div:last-child > h3::after {
+  content: '';
+  background: #4D4D4D;
+  width: 20%;
+  height: 1.5px;
+  margin: 0 20px;
+}
+
+.rentals > div > div > div:last-child .card {
+  border: none;
+  position: relative;
+  margin-top: 40px;
+}
+
+.rentals > div > div > div:last-child .card > a {
+  position: absolute;
+  background-color: #4D4D4D;
+  color: #DAA03DFF;
+  padding: 6px 12px;
+  top: 5px;
+  left: 5px;
+  border-radius: 3px;
+  z-index: 99;
+}
+
+.rentals > div > div > div:last-child .card > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rentals > div > div > div:last-child .card > div > img {
+  width: 360px;
+  height: 230px;
+}
+
+.rentals > div > div > div:last-child .card > div hr {
+  width: 95%;
+  margin: 12px auto;
+}
+
+.rentals > div > div > div:last-child .card > div p {
+  font-size: 13px;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div > p {
+  margin: 0 10px 18px 0;
+  line-height: 1.4;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div > img {
+  width: 80px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div.prio {
+  background-color: #DAA03DFF;
+  padding: 0 15px;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div.prio > div > a {
+  font-size: 12px;
+  color: gold;
+  letter-spacing: 1.5px;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div.prio > div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div.prio > div:nth-child(2) > h5 {
+  font-size: 15px;
+  margin: 0 10px;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div.prio > div:nth-child(2) > p {
+  width: 80px;
+  background: gold;
+  text-align: center;
+  padding: 5px;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div.prio > div:nth-child(2) .priority {
+  background-color: #4D4D4D;
+  color: white;
+  z-index: 999999;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div:last-child {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div:last-child > span {
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.rentals > div > div > div:last-child .card > div > div > div:last-child > a {
+  border: 1px solid rgba(255, 0, 0, 0.733);
+  border-radius: 3px;
+  padding: 6px 12px;
+  color: black;
+  margin-left: auto;
+  text-align: center;
+  font-size: 14px;
+}
+
+.rentals > div > div > div:first-child > div {
+  text-align: center;
+}
+
+.rentals > div > div > div:first-child > div > div:first-child {
+  height: 300px;
+  -webkit-box-shadow: 2px 2px 30px whitesmoke;
+          box-shadow: 2px 2px 30px whitesmoke;
+  border: none;
+  padding: 15px 0;
+}
+
+.rentals > div > div > div:first-child > div > div:first-child > h3 {
+  line-height: 1.3;
+}
+
+.rentals > div > div > div:first-child > div > div:first-child > p {
+  margin: 20px 0;
+  color: #4D4D4D;
+}
+
+.rentals > div > div > div:first-child > div > div:first-child > div {
+  margin: 30px 10px 0;
+}
+
+.rentals > div > div > div:first-child > div > div:first-child > div > input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(255, 0, 0, 0.507);
+  text-align: center;
+}
+
+.rentals > div > div > div:first-child > div > div:first-child > div > a {
+  height: 40px;
+  width: 100%;
+  background-color: red;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rentals > div > div > div:first-child > div > div:last-child {
+  margin-top: 60px;
+}
+
+.rentals > div > div > div:first-child > div > div:last-child .card {
+  -webkit-box-shadow: 2px 2px 30px whitesmoke;
+          box-shadow: 2px 2px 30px whitesmoke;
+  border: none;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+.rentals > div > div > div:first-child > div > div:last-child .card h4 {
+  margin: 15px;
+  line-height: 1.4;
+}
+
+.rentals > div > div > div:first-child > div > div:last-child .card > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rentals > div > div > div:first-child > div > div:last-child .card > div > img {
+  width: 80%;
+  border-radius: 5px;
+}
+
+.rentals > div > div > div:first-child > div > div:last-child .card > div > a {
+  border-radius: 2px;
+  padding: 6px 12px;
+  color: white;
+  margin: 10px 0;
+  width: 150px;
+  background-color: red;
+}
+
+.priority-listings {
+  border: none;
+  position: relative;
+  margin-top: 40px;
+}
+
+.priority-listings > a {
+  position: absolute;
+  background-color: #4D4D4D;
+  color: #DAA03DFF;
+  padding: 6px 12px;
+  top: 5px;
+  left: 5px;
+  border-radius: 3px;
+  z-index: 99;
+}
+
+.priority-listings > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.priority-listings > div hr {
+  width: 95%;
+  margin: 12px auto;
+}
+
+.priority-listings > div p {
+  font-size: 13px;
+}
+
+.priority-listings > div > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+}
+
+.priority-listings > div > div > div > p {
+  margin: 0 10px 18px 0;
+  line-height: 1.4;
+}
+
+.priority-listings > div > div > div > img {
+  width: 80px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px;
+}
+
+.priority-listings > div > div > div.prio > div > a {
+  font-size: 12px;
+  color: gold;
+  letter-spacing: 1.5px;
+}
+
+.priority-listings > div > div > div.prio > div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.priority-listings > div > div > div.prio > div:nth-child(2) > h5 {
+  font-size: 15px;
+  margin: 0 10px;
+}
+
+.priority-listings > div > div > div.prio > div:nth-child(2) > p {
+  width: 80px;
+  background: gold;
+  text-align: center;
+  padding: 5px;
+}
+
+.priority-listings > div > div > div.prio > div:nth-child(2) .priority {
+  background-color: #4D4D4D;
+  color: white;
+  z-index: 999999;
+}
+
+.priority-listings > div > div > div:last-child {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.priority-listings > div > div > div:last-child > span {
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.priority-listings > div > div > div:last-child > a {
+  border: 1px solid rgba(255, 0, 0, 0.733);
+  border-radius: 3px;
+  padding: 6px 12px;
+  color: black;
+  margin-left: auto;
+  text-align: center;
+  font-size: 14px;
+}
+
+.large-img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.featured {
+  background-color: white;
+  border-right: 1px solid gold;
+  margin-top: 50px;
+  position: relative;
+}
+
+.featured .ribbon {
+  position: absolute;
+  background-color: #4D4D4D;
+  color: gold;
+  padding: 6px 12px;
+  top: 78px;
+  left: 5px;
+  border-radius: 1px;
+  z-index: 99;
+}
+
+.featured > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: gold;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px;
+  width: 100%;
+}
+
+.featured > div:first-child > h3 {
+  font-size: 24px;
+}
+
+.featured > div:first-child > h4 {
+  font-size: 20px;
+}
+
+.featured > div:first-child .feature {
+  color: gold;
+  background-color: #4D4D4D;
+  padding: 10px;
+  font-size: 12px;
+  z-index: 9999;
+}
+
+.featured .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.featured .second > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.featured .second > div:last-child .small-img {
+  margin: 0 0 8px 8px;
+  width: 235px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.featured .second > div > a > span {
+  background-color: gold;
+}
+
+.featured .last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.featured .last > div:first-child {
+  padding: 15px;
+}
+
+.featured .last > div:first-child > h3 {
+  font-size: 22px;
+}
+
+.featured .last > div:first-child > p {
+  font-size: 13px;
+  margin: 12px 0;
+}
+
+.featured .last > div:first-child > div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.featured .last > div:first-child > div > span {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.featured .last > div:first-child > div > a {
+  border: 1px solid gold;
+  border-radius: 3px;
+  padding: 6px 12px;
+  color: black;
+  margin-left: auto;
+  text-align: center;
+  font-size: 13px;
+}
+
+.featured .last > div:last-child {
+  text-align: center;
+  position: relative;
+  height: 130px;
+}
+
+.featured .last > div:last-child > img {
+  width: 235px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.featured .last > div:last-child > div {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.514);
+  color: white;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featured .last > div:last-child > div h5 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.featured .last > div:last-child > div > span {
+  margin: 3px 0;
+  font-size: 11px;
+}
+
+.FEATURED {
+  border-right: 1px solid #DAA03DFF;
+}
+
+.FEATURED > div:first-child {
+  background-color: #DAA03DFF;
+}
+
+.FEATURED .priority-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+}
+
+.FEATURED .priority-list .second .prio-img {
+  width: 360px;
+  height: 100%;
+}
+
+.FEATURED .priority-list .last {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.FEATURED .priority-list .last .prio-icons {
+  text-align: left;
+  padding: 0 15px;
+  height: 20px;
+}
+
+.FEATURED .priority-list .last .prio-icons > span {
+  margin-right: 70px;
+}
+
+.FEATURED .priority-list .last .prio-icons > a {
+  color: black;
+  border: 1px solid #DAA03DFF;
+  border-radius: 2px;
+  padding: 5px 12px;
+  font-size: 12px;
+  margin-right: auto;
+}
+
+.FEATURED .priority-list .last > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+
+.FEATURED .priority-list .last > div:last-child > h4 {
+  font-size: 15px;
+  line-height: 1.3;
+  text-align: left;
+  color: #DAA03DFF;
+}
+
+.FEATURED .priority-list .last > div:last-child > img {
+  width: 120px;
+  height: 60%;
+}
+
+.container-breadcrumb {
+  padding: 100px 0 0 0;
+}
+
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  height: 50px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  font-size: 11px;
+  background-color: white;
+}
+
+.breadcrumb a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  margin: auto;
+  height: 100%;
+  padding: 0 18px;
+  color: red;
+  font-weight: bold;
+}
+
+.breadcrumb a:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  top: -7px;
+  right: -20px;
+  border-top-right-radius: 5px;
+  -webkit-transform: scale(0.707) rotate(45deg);
+          transform: scale(0.707) rotate(45deg);
+  -webkit-box-shadow: 1px -1px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px -1px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  margin-right: 4px;
+}
+
+.breadcrumb a:first-child:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  top: -7px;
+  right: 100px;
+  border-top-right-radius: 5px;
+  -webkit-transform: scale(0.707) rotate(-135deg);
+          transform: scale(0.707) rotate(-135deg);
+  -webkit-box-shadow: 1px -1px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px -1px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.breadcrumb a:last-child:after {
+  content: none;
+}
+
+.breadcrumb__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  z-index: 2;
+}
+
+.carousel-image {
+  height: 500px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-thumbnails .carousel-indicators img {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-indicators {
+  background: rgba(0, 0, 0, 0.644);
+  padding: 10px;
+}
+
+.carousel-caption {
+  top: 40%;
+}
+
+.carousel-caption > h1 {
+  color: rgba(255, 0, 0, 0.671);
+  font-size: 42px;
+}
+
+.carousel-thumbnails .carousel-indicators li {
+  height: auto;
+  width: 100px;
+  border: none;
+  -webkit-box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.carousel-thumbnails .carousel-indicators li.active {
+  border-bottom: 4px solid #fff;
+}
+
+.btn-primary {
+  background-color: red;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: whitesmoke;
+  color: red;
+}
+
+.card-icons > i {
+  margin: 15px 30px 0 0;
+}
+
+.single-card-image {
+  width: 100%;
+  height: 250px;
+}
+
+.single-listings-card {
+  background-color: whitesmoke;
+}
+
+span {
+  color: red;
+}
+
+.single-listings-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: whitesmoke;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single-listings-page > div {
+  padding: 0 8px;
+}
+
+.single-listings-page > div > h4 {
+  color: red;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+
+.single-listings-page > div:first-child {
+  background-color: gold;
+  margin-right: 5px;
+  padding: 12px 20px;
+}
+
+.single-description {
+  margin: 20px 0 80px;
+}
+
+.single-description h4 {
+  font-size: 19px;
+  margin: 5px 0;
+}
+
+.single-description > p {
+  font-size: 13px;
+  color: gold;
+}
+
+.single-description > div {
+  margin: 20px 0;
+}
+
+.single-description > div > p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+.single-description > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  background-color: gold;
+}
+
+.single-description > div > div > img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 30px;
+}
+
+.single-description > div > div > div {
+  padding: 20px 0;
+}
+
+.single-description > div > div > div > div {
+  margin: 15px 0;
+}
+
+.single-description > div > div > div > div > p {
+  font-size: 14px;
+}
+
+.agent-details {
+  margin-top: 150px;
+  border: none;
+  -webkit-box-shadow: 1px 1px 20px #b6b6b6;
+          box-shadow: 1px 1px 20px #b6b6b6;
+  padding: 15px;
+}
+
+.agent-details > h3 {
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+.agent-details > img {
+  width: 100%;
+  height: 180px;
+}
+
+.agent-details > button {
+  background-color: red;
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+.agent-details > h4 {
+  margin: 15px 0;
+}
+
+.agent-details > form > input {
+  height: 40px;
+  width: 100%;
+  margin: 8px 0;
+  padding: 5px 10px;
+}
+
+.agent-details > form > textarea {
+  width: 100%;
+  height: 120px;
+  padding: 5px 10px;
+  margin: 8px 0;
+}
+
+.agent-details > form > a {
+  height: 35px;
+  width: 100%;
+  background-color: red;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.agent-details > p {
+  font-size: 12px;
+  text-align: center;
+  margin: 5px;
+}
+
+.myText {
+  display: none;
+}
+
+.myText > p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.myText > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.myText > div > p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.myText > div > a {
+  width: 49%;
+  color: white;
+  background-color: red;
+  height: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.myText > div > a:hover {
+  text-decoration: none;
+  background-color: blue;
+}
+
+.myText > div > a > i {
+  margin-right: 10px;
+}
+
+.comments {
+  margin: 20px 0;
+}
+
+.comments > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+}
+
+.comments > p > i {
+  font-size: 28px;
+  margin-right: 15px;
 }
 
 @media (max-width: 575px) {
@@ -1233,6 +2278,9 @@ nav.navbar #navbar > div li:hover {
             flex-direction: column;
     line-height: 1.5;
   }
+  > li a .main-footer .footer-inner ul:hover {
+    color: #000;
+  }
   .main-footer .footer-inner img {
     height: 50px;
     margin: 25px 0;
@@ -1246,6 +2294,85 @@ nav.navbar #navbar > div li:hover {
   .main-footer .last p {
     text-align: center;
     padding: 15px 0;
+  }
+  .rentals > div > div > div:first-child .rentals-results {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rentals > div > div > div:first-child .rentals-results > div p {
+    margin-top: 30px;
+  }
+  .rentals > div > div > div:first-child .rentals-results > div > select {
+    background: red;
+    border: none;
+    color: white;
+  }
+  .rentals > div > div > div:first-child > h3 {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rentals > div > div > div:first-child > h3::after {
+    content: '';
+    background: #4D4D4D;
+    width: 20%;
+    height: 1.5px;
+    margin: 0 20px;
+  }
+  .rentals > div > div > div:first-child .card {
+    margin-top: 50px;
+  }
+  .rentals > div > div > div:first-child .card > a {
+    top: 8px;
+  }
+  .rentals > div > div > div:first-child .card > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rentals > div > div > div:first-child .card > div > img {
+    width: 100%;
+  }
+  .rentals > div > div > div:first-child .card > div > div {
+    margin-top: 15px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div > h4 {
+    font-size: 20px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div > img {
+    width: 60px;
+    height: 40px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:nth-of-type(1) > div > h4 {
+    font-size: 20px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:nth-of-type(1) > div > p {
+    font-size: 10px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:nth-of-type(1) > div > a {
+    font-size: 10px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:nth-of-type(1) > div:nth-child(2) > h5 {
+    font-size: 12px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:nth-of-type(1) > div:nth-child(2) > p {
+    width: 80px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:last-child > span {
+    font-size: 12px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:last-child > a {
+    font-size: 12px;
+  }
+  .rentals > div > div > div:last-child {
+    margin-top: 60px;
   }
 }
 
@@ -1559,6 +2686,86 @@ nav.navbar #navbar > div li:hover {
     text-align: center;
     padding: 15px 0;
   }
+  .rentals > div > div > div:first-child .rentals-results {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: red;
+    padding: 15px;
+    color: white;
+    margin: 40px 0 20px;
+  }
+  .rentals > div > div > div:first-child .rentals-results > div > select {
+    background: red;
+    border: none;
+    color: white;
+  }
+  .rentals > div > div > div:first-child > h3 {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rentals > div > div > div:first-child > h3::after {
+    content: '';
+    background: #4D4D4D;
+    width: 20%;
+    height: 1.5px;
+    margin: 0 20px;
+  }
+  .rentals > div > div > div:first-child .card {
+    margin-top: 50px;
+  }
+  .rentals > div > div > div:first-child .card > a {
+    top: 8px;
+  }
+  .rentals > div > div > div:first-child .card > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rentals > div > div > div:first-child .card > div > img {
+    width: 100%;
+    height: 350px;
+  }
+  .rentals > div > div > div:first-child .card > div > div {
+    margin-top: 15px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div > h4 {
+    font-size: 20px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div > img {
+    width: 60px;
+    height: 40px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:nth-of-type(1) > div > h4 {
+    font-size: 20px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:nth-of-type(1) > div > p {
+    font-size: 10px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:nth-of-type(1) > div > a {
+    font-size: 10px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:nth-of-type(1) > div:nth-child(2) > h5 {
+    font-size: 12px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:nth-of-type(1) > div:nth-child(2) > p {
+    width: 80px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:last-child > span {
+    font-size: 12px;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:last-child > a {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1731,6 +2938,70 @@ nav.navbar #navbar > div li:hover {
     width: 70%;
     line-height: 1.5;
   }
+  .rentals > div > div > div:first-child .card > a > div > img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .rentals > div > div > div:first-child .card > a > div > div > div > h4 {
+    font-size: 20px;
+  }
+  .rentals > div > div > div:first-child .card > a > div > div > div > img {
+    width: 60px;
+    height: 40px;
+  }
+  .rentals > div > div > div:last-child > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 60px;
+  }
+  .rentals > div > div > div:last-child > div .card {
+    width: 400px;
+    margin: 5px;
+  }
+  .rentals > div > div > div:last-child > div .card > h3 {
+    line-height: 1.3;
+  }
+  .rentals > div > div > div:last-child > div .card > p {
+    margin: 20px 0;
+    color: #4D4D4D;
+  }
+  .rentals > div > div > div:last-child > div .card > div {
+    margin: 30px 10px 0;
+  }
+  .rentals > div > div > div:last-child > div .card > div > input {
+    height: 40px;
+    width: 80%;
+    border: 1px solid rgba(255, 0, 0, 0.507);
+    text-align: center;
+  }
+  .rentals > div > div > div:last-child > div .card > div > a {
+    height: 40px;
+    width: 80%;
+    background-color: red;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rentals > div > div > div:last-child > div > div:last-child {
+    width: 400px;
+    margin: 5px;
+  }
+  .rentals > div > div > div:last-child > div > div:last-child > div {
+    width: 100%;
+  }
+  .rentals > div > div > div:last-child > div > div:last-child > div > img {
+    width: 70%;
+  }
 }
 
 @media (max-width: 812px) and (min-width: 780px) {
@@ -1824,6 +3095,56 @@ nav.navbar #navbar > div li:hover {
   .main-footer .last > p {
     padding-right: 80px;
     line-height: 1.5;
+  }
+  .rentals > div > div > div:first-child .rentals-results {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: red;
+    padding: 15px;
+    color: white;
+    margin: 40px 0 20px;
+  }
+  .rentals > div > div > div:first-child .rentals-results > div > select {
+    background: red;
+    border: none;
+    color: white;
+  }
+  .rentals > div > div > div:first-child .card {
+    border: none;
+    position: relative;
+    margin-top: 40px;
+  }
+  .rentals > div > div > div:first-child .card > div > img {
+    width: 330px;
+    height: 260px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .rentals > div > div > div:first-child .card > div > div > div:last-child > a {
+    padding: 6px 2px;
+    font-size: 12px;
+  }
+  .rentals > div > div > div:last-child > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rentals > div > div > div:last-child > div .card {
+    width: 220px;
+  }
+  .rentals > div > div > div:last-child > div .card > p {
+    margin: 10px 0;
+  }
+  .rentals > div > div > div:last-child > div .card > div:last-child {
+    width: 220px;
+  }
+  .rentals > div > div > div:last-child > div .card > div:last-child > div {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
